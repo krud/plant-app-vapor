@@ -17,9 +17,9 @@ version: '3.7'
 x-shared_environment: &shared_environment
   LOG_LEVEL: ${LOG_LEVEL:-debug}
   DATABASE_HOST: db
-  DATABASE_NAME: vapor_database
-  DATABASE_USERNAME: vapor_username
-  DATABASE_PASSWORD: vapor_password
+  DATABASE_NAME: plant
+  DATABASE_USERNAME: kelly
+  DATABASE_PASSWORD: nil
 
 services:
   app:

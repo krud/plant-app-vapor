@@ -28,6 +28,8 @@ struct UserController {
         return token.save(on: req.db)
             .map { token }
     }
+//    }
+    
     
 //    func profile(req: Request) throws -> EventLoopFuture<User> {
 //        let token = try req.auth.require(User.self)
@@ -35,6 +37,7 @@ struct UserController {
 //        let userData =
 //        return user.with(\.$plants).all()
 //    }
+    
     func logout(_ req: Request) throws -> HTTPResponseStatus {
         req.auth.logout(User.self)
         return HTTPResponseStatus(statusCode: 200)
